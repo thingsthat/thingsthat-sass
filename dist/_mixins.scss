@@ -1,0 +1,55 @@
+@mixin no-select {
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    -o-user-select: none;
+    user-select: none;
+}
+
+@mixin no-drag {
+    pointer-events: none;
+}
+
+@mixin icon-button {
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    -o-user-select: none;
+    user-select: none;
+    border : none;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    width : 32px;
+    height : 32px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@mixin list-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin transition {
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    transition: clip-path 0.9s linear; 
+}
+
+@mixin transition-off {
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    transition: none; 
+}
+
+@mixin transition($x...){
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transition: $x;
+    -moz-transition: $x;
+    -ms-transition: $x;
+    transition: $x;
+}

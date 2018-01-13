@@ -1,0 +1,21 @@
+{
+  "name": "twicelysass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Jack Prosser <jack@twicely.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "package-lock.json",
+    "package.json",
+    "gulpfile.js"
+  ]
+}
