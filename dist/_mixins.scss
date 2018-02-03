@@ -53,3 +53,14 @@
     -ms-transition: $x;
     transition: $x;
 }
+
+@function rem($size) {
+    $size: $size/16;
+    @return #{$size}rem;
+}
+
+@function remMobile($size) {
+    $size: $size/24;
+    @return #{$size}rem;
+}
+
