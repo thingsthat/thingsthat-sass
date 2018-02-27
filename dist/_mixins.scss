@@ -1,7 +1,7 @@
 @mixin no-select {
-    -webkit-user-select: none; /* Chrome/Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+ */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
 }
@@ -11,9 +11,9 @@
 }
 
 @mixin icon-button {
-    -webkit-user-select: none; /* Chrome/Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+ */
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
     -o-user-select: none;
     user-select: none;
     border : none;
@@ -33,34 +33,27 @@
     padding: 0;
 }
 
-@mixin transition {
-    -webkit-backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    transition: clip-path 0.9s linear; 
+@mixin transform($string) {
+    -webkit-transform: $string;
+    -moz-transform: $string;
+    -ms-transform: $string;
+    -o-transform: $string;
+    transform: $string;
 }
 
-@mixin transition-off {
-    -webkit-backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    transition: none; 
+@mixin border-radius($topLeft, $topRight, $bottomRight, $bottomLeft) {
+    -webkit-border-radius: $topLeft $topRight $bottomRight $bottomLeft;
+    -opera-border-radius: $topLeft $topRight $bottomRight $bottomLeft;
+    -moz-border-radius: $topLeft $topRight $bottomRight $bottomLeft;
+    -ms-border-radius: $topLeft $topRight $bottomRight $bottomLeft;
+    border-radius: $topLeft $topRight $bottomRight $bottomLeft;
 }
 
-@mixin transition($x...){
-    -webkit-backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    -webkit-transition: $x;
-    -moz-transition: $x;
-    -ms-transition: $x;
-    transition: $x;
+@mixin opacity ($opacity: 0.5) {
+    -webkit-opacity: $opacity;
+    -moz-opacity: $opacity;
+    opacity: $opacity;
 }
 
-@function rem($size) {
-    $size: $size/16;
-    @return #{$size}rem;
-}
 
-@function remMobile($size) {
-    $size: $size/24;
-    @return #{$size}rem;
-}
 

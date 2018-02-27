@@ -1,0 +1,14 @@
+@mixin slashClip() {
+    -webkit-clip-path: polygon(0 0, 100% 60px, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 60px, 100% 100%, 0% 100%);
+}
+
+@mixin slashClipTablet() {
+    -webkit-clip-path: polygon(0 0, 100% 40px, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 40px, 100% 100%, 0% 100%);
+}
+
+@mixin slashClipMobile() {
+    -webkit-clip-path: polygon(0 0, 100% 20px, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 20px, 100% 100%, 0% 100%);
+}

@@ -1,0 +1,44 @@
+@mixin transition {
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    transition: clip-path 0.9s linear; 
+}
+
+@mixin transition-off {
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    transition: none; 
+}
+
+@mixin transition($x...){
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transition: $x;
+    -moz-transition: $x;
+    -ms-transition: $x;
+    transition: $x;
+}
+
+@mixin slowTransition($name) {
+    -webkit-transition: $name 1s ease-in-out 250ms;
+    -moz-transition: $name 1s ease-in-out 250ms;
+    -ms-transition: $name 1s ease-in-out 250ms;
+    -o-transition: $name 1s ease-in-out 250ms;
+    transition: $name 1s ease-in-out 250ms;
+}
+
+@mixin mediumTransition($name) {
+    -webkit-transition: $name 150ms ease-in-out 500ms;
+    -moz-transition: $name 150ms ease-in-out;
+    -ms-transition: $name 150ms ease-in-out;
+    -o-transition: $name 150ms ease-in-out;
+    transition: $name 150ms ease-in-out;
+}
+
+@mixin fastTransition($name) {
+    -webkit-transition: $name .10s ease-in-out;
+    -moz-transition: $name .10s ease-in-out;
+    -ms-transition: $name .10s ease-in-out;
+    -o-transition: $name .10s ease-in-out;
+    transition: $name .10s ease-in-out;
+}
