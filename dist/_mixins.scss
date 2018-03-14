@@ -1,6 +1,7 @@
 @import 'mixins-clips';
 @import 'mixins-fonts';
 @import 'mixins-transitions';
+@import 'mixins-animations';
 
 @mixin no-select {
     -webkit-user-select: none;

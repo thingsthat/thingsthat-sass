@@ -1,15 +1,3 @@
-@mixin transition {
-    -webkit-backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    transition: clip-path 0.9s linear; 
-}
-
-@mixin transition-off {
-    -webkit-backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    transition: none; 
-}
-
 @mixin transition($x...){
     -webkit-backface-visibility: hidden;
     -webkit-perspective: 1000;
