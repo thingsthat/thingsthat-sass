@@ -1,14 +1,13 @@
 {
   "name": "thingsthatsass",
   "version": "1.0.5",
-  "description": "",
+  "description": "Simple library of useful sass mixins",
   "main": "",
   "authors": [
     "Jack Prosser <jack@thingsthat.com>"
   ],
   "license": "MIT",
-  "homepage": "",
-  "private": true,
+  "homepage": "https://thingsthat.com",
   "ignore": [
     "**/.*",
     "node_modules",
