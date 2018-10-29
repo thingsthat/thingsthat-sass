@@ -1,7 +1,7 @@
 {
   "name": "thingsthatsass",
   "version": "1.0.5",
-  "description": "Simple library of useful sass mixins",
+  "description": "Common Sass mixins and helpers, which help us build our products",
   "main": "",
   "authors": [
     "Jack Prosser <jack@thingsthat.com>"

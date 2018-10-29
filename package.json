@@ -1,0 +1,12 @@
+{
+    "name": "@thingsthat/thingsthatsass",
+    "description": "Common Sass mixins and helpers, which help us build our products",
+    "license": "MIT",
+    "url": "https://github.com/thingsthat/thingsthat-sass",
+    "version": "1.0.5",
+    "author": "Things & That <hello@thingsthat.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/thingsthat/thingsthat-sass.git"
+    }
+}
